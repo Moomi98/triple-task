@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import useCount from "../hooks/useCount";
 import { showComponent } from "../utils/animations";
 
 const Layout = styled.div`
@@ -20,24 +21,28 @@ const TextLayout = styled.div`
 const StrongText = styled.strong`
   font-weight: bold;
 `;
+
 const TextMetrics = () => {
+  const travelCount = useCount(700);
+  const reviewCount = useCount(100);
+  const scheduleCount = useCount(470);
   return (
     <Layout>
       <TextLayout>
         <StrongText>
-          <span>700</span>만 명
+          <span>{travelCount}</span>만 명
         </StrongText>
         의 여행자
       </TextLayout>
       <TextLayout>
         <StrongText>
-          <span>100</span>만 개
+          <span>{reviewCount}</span>만 개
         </StrongText>
         의 여행 리뷰
       </TextLayout>
       <TextLayout>
         <StrongText>
-          <span>470</span>만 개
+          <span>{scheduleCount}</span>만 개
         </StrongText>
         의 여행 일정
       </TextLayout>
