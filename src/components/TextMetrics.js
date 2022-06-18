@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import { showComponent } from "../utils/animations";
 
 const Layout = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  opacity: 0;
+
+  animation: ${showComponent} 0.7s 0.1s linear forwards;
 `;
 const TextLayout = styled.div`
   font-size: 36px;

@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import { playStore, apple } from "../images";
+import { showComponent } from "../utils/animations";
 
 const Layout = styled.div`
   width: 100%;
   display: flex;
   margin-top: 30px;
+  opacity: 0;
+  animation: ${showComponent} 0.7s 0.2s linear forwards;
 `;
 
 const AwardLayout = styled.div`

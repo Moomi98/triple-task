@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import { triple } from "../images";
+import { showComponent } from "../utils/animations";
 
 const Layout = styled.figure`
   width: 400px;
   height: 338px;
   position: relative;
+  opacity: 0;
+  animation: ${showComponent} 0.7s linear forwards;
 `;
 
 const TripleImage = styled.img`
