@@ -9,6 +9,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
@@ -34,5 +35,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@titicaca/eslint-config-triple": "^3.1.0"
+  },
+  "lint:es": "eslint '**/*.{js,ts,tsx}'",
+  "lint:es:fix": "npm run lint:es -- --fix",
+  "lint:etc": "prettier '**/*.{json,yaml,md}' --check",
+  "lint:etc:fix": "prettier '**/*.{json,yaml,md}' --write"
 }
