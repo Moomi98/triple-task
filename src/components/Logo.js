@@ -24,7 +24,7 @@ const Logo = () => {
   return (
     <Layout>
       <TripleImage src={triple}></TripleImage>
-      <ImageCaption>2019년 2월 기준</ImageCaption>
+      <ImageCaption>2021년 12월 기준</ImageCaption>
     </Layout>
   );
 };

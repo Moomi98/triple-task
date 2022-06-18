@@ -1,17 +1,18 @@
 import styled from "styled-components";
-import { playStore } from "../images";
+import { playStore, apple } from "../images";
 
 const Layout = styled.div`
   width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
+  margin-top: 30px;
 `;
 
 const AwardLayout = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
+  gap: 5px;
 `;
 
 const AwardImage = styled.img`
@@ -20,7 +21,7 @@ const AwardImage = styled.img`
 `;
 
 const TextLayout = styled.div`
-  height: 100%;
+  text-align: left;
 `;
 
 const AwardText = styled.span`
@@ -42,11 +43,11 @@ const Awards = () => {
         </TextLayout>
       </AwardLayout>
       <AwardLayout>
-        <AwardImage src={playStore} />
+        <AwardImage src={apple} />
         <TextLayout>
-          <AwardText>2018 구글 플레이스토어</AwardText>
+          <AwardText>2018 애플 앱스토어</AwardText>
           <br />
-          <AwardText>올해의 앱 최우수상 수상</AwardText>
+          <AwardText>오늘의 여행앱 선정</AwardText>
         </TextLayout>
       </AwardLayout>
     </Layout>
