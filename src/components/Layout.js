@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Logo from "./Logo";
 
 const MainLayout = styled.div`
   display: flex;
@@ -26,7 +27,9 @@ const InfoLayout = styled.div`
 const Layout = () => {
   return (
     <MainLayout>
-      <LogoLayout></LogoLayout>
+      <LogoLayout>
+        <Logo />
+      </LogoLayout>
       <InfoLayout></InfoLayout>
     </MainLayout>
   );
