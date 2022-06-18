@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logo from "./Logo";
+import TextMetrics from "./TextMetrics";
 
 const MainLayout = styled.div`
   display: flex;
@@ -30,7 +31,9 @@ const Layout = () => {
       <LogoLayout>
         <Logo />
       </LogoLayout>
-      <InfoLayout></InfoLayout>
+      <InfoLayout>
+        <TextMetrics />
+      </InfoLayout>
     </MainLayout>
   );
 };
