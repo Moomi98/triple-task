@@ -4,7 +4,7 @@ const MainLayout = styled.div`
   display: flex;
   align-items: center;
   justify-items: center;
-  min-width: 1200px;
+  width: 1200px;
   height: 100%;
   margin: 0 auto;
   border: 1px solid red;
