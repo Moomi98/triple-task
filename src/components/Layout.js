@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Awards from "./Awards";
 import Logo from "./Logo";
 import TextMetrics from "./TextMetrics";
 
@@ -22,6 +23,7 @@ const InfoLayout = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 `;
 
@@ -33,6 +35,7 @@ const Layout = () => {
       </LogoLayout>
       <InfoLayout>
         <TextMetrics />
+        <Awards />
       </InfoLayout>
     </MainLayout>
   );
