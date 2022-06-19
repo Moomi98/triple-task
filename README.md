@@ -15,6 +15,8 @@ npm install
 ```
 
 ## 사용한 기술
+React와 Javascript를 제외하고 필요에 의해 사용한 추가 기술에 대해 정리했습니다.
+
 ![image](https://user-images.githubusercontent.com/76273383/174466572-45bc8aa8-64dd-4d72-bb63-93b6ed572a59.png)
 
 ### 사용 이유
