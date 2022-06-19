@@ -18,10 +18,6 @@ const TextLayout = styled.div`
   margin-bottom: 20px;
 `;
 
-const StrongText = styled.strong`
-  font-weight: bold;
-`;
-
 const TextMetrics = () => {
   const travelCount = useCount(700);
   const reviewCount = useCount(100);
@@ -29,21 +25,21 @@ const TextMetrics = () => {
   return (
     <Layout>
       <TextLayout>
-        <StrongText>
+        <strong>
           <span>{travelCount}</span>만 명
-        </StrongText>
+        </strong>
         의 여행자
       </TextLayout>
       <TextLayout>
-        <StrongText>
+        <strong>
           <span>{reviewCount}</span>만 개
-        </StrongText>
+        </strong>
         의 여행 리뷰
       </TextLayout>
       <TextLayout>
-        <StrongText>
+        <strong>
           <span>{scheduleCount}</span>만 개
-        </StrongText>
+        </strong>
         의 여행 일정
       </TextLayout>
     </Layout>
